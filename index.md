@@ -3,9 +3,12 @@ layout: default
 title: Writing
 ---
 
-{% include nav.html %}
+Welcome. This is a small personal site for notes, little tools, and links I use myself.
 
-Welcome. This is a small personal site for notes, little tools, and links I use myself. My [start page](https://start-page-v1-remd.vercel.app) is the best place to begin.
+- [My start page](https://start-page-v1-remd.vercel.app)
+- [Tools]({{ '/tools/' | relative_url }})
+- [Links]({{ '/links/' | relative_url }})
+- [About]({{ '/about/' | relative_url }})
 
 ## Writing
 

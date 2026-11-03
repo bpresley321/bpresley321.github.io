@@ -8,12 +8,12 @@
 
 ## Theme
 This site uses the Minimal theme (`theme: jekyll-theme-minimal` in `_config.yml`).
-Minimal only provides one layout, so `_layouts/page.html` and `_layouts/post.html` add the menu and titles on top of it, and `_includes/nav.html` is the menu.
+Minimal only provides one layout, so `_layouts/page.html` and `_layouts/post.html` add a Home link and titles on top of it.
 To switch to another built-in GitHub Pages theme, change the `theme:` line; other GitHub-hosted themes use `remote_theme: owner/repo` plus `jekyll-remote-theme` under `plugins:`. Layout names differ between themes, so ask Claude to adjust.
 
 ## Add content
 - **Post:** new file in `_posts/` named `YYYY-MM-DD-title.md`.
-- **Page:** new `.md` file in the top folder; add a link to it in `_includes/nav.html`.
+- **Page:** new `.md` file in the top folder; link to it from `index.md`.
 - **Tool:** drop an HTML file in a `tools/` folder and link it from `tools.md`.
 
 ## Preview locally (optional)
