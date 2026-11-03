@@ -6,17 +6,14 @@
 3. Repo Settings > Pages > Source: "Deploy from a branch", branch `main`, folder `/ (root)`.
 4. After a minute or two the site is live at `https://<your-username>.github.io`.
 
-## Change the theme
-Edit the `theme:` line in `_config.yml`.
-- Built-in GitHub Pages themes use a name, e.g. `theme: minima` or `theme: jekyll-theme-cayman`.
-- Any other theme hosted on GitHub: replace `theme:` with
-  `remote_theme: owner/repo-name` and add `- jekyll-remote-theme` under `plugins:`.
-
-Themes differ in which layouts they provide. If a page looks wrong after a swap, the usual fix is the `layout:` line at the top of that file.
+## Theme
+This site uses the Minimal theme (`theme: jekyll-theme-minimal` in `_config.yml`).
+Minimal only provides one layout, so `_layouts/page.html` and `_layouts/post.html` add the menu and titles on top of it, and `_includes/nav.html` is the menu.
+To switch to another built-in GitHub Pages theme, change the `theme:` line; other GitHub-hosted themes use `remote_theme: owner/repo` plus `jekyll-remote-theme` under `plugins:`. Layout names differ between themes, so ask Claude to adjust.
 
 ## Add content
 - **Post:** new file in `_posts/` named `YYYY-MM-DD-title.md`.
-- **Page:** new `.md` file in the top folder; add it to `header_pages` in `_config.yml` to show it in the menu.
+- **Page:** new `.md` file in the top folder; add a link to it in `_includes/nav.html`.
 - **Tool:** drop an HTML file in a `tools/` folder and link it from `tools.md`.
 
 ## Preview locally (optional)

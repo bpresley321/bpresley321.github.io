@@ -1,22 +1,14 @@
 title: "[Your Name]"
 description: "Notes, small tools, and links I use myself."
-# For a user site (repo named <username>.github.io) leave url/baseurl as-is.
-# For a project site, set baseurl to "/<repo-name>".
+# User site (repo named <username>.github.io): leave url/baseurl as-is.
 url: ""
 baseurl: ""
 
-# To try a different theme, change this one line (see README.md).
-theme: minima
+# Theme: https://github.com/pages-themes/minimal (built in to GitHub Pages)
+theme: jekyll-theme-minimal
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Order of the links in the header
-header_pages:
-  - tools.md
-  - links.md
-  - about.md
-  - start.md
-
-show_excerpts: false
+show_downloads: false
